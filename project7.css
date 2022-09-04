@@ -1,0 +1,37 @@
+.btn {
+	display: inline-block;
+	padding: 0.75em 1em;
+	background-color: #1ce;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 300px;
+	background-color: #333;
+	transition: 1s;
+}
+ .sidebar ul{
+	margin: 0;
+	padding: 0;
+ }
+ .sidebar li{
+	list-style: none;
+}
+
+.sidebar  li + li{
+	border-top: 1px solid white;
+}
+.sidebar a{
+	display: block;
+	padding: 1em 1.5em;
+	color: #fff;
+	text-decoration: none;
+}
+.sidebar.is-hidden{
+	transform: translate(300px);
+}
